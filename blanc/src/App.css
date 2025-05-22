@@ -92,6 +92,7 @@ img {
 .text-header {
   font-family: "Aboreto";
   font-size: 24px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 .text-body {
@@ -104,6 +105,7 @@ img {
 .block3-container {
  position: relative;
  width: 100%;
+ z-index: 4;
 }
 
 .gradient-img {
@@ -111,11 +113,104 @@ img {
    display: block;
 }
 
-.services-img {
+.services-container {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  display: flex;             
+  justify-content: center;   
+  gap: 80px; 
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover .services-img {
+  transform: scale(1.1);
+  z-index: 3;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.service-item:hover .service-label {
+  font-size: 24px;
+  transform: scale(1.1);
+  transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+.services-img{
+  width: 200px;
+  border-radius: 12px;
+  height: 200px;
+  transition: transform 0.3s ease;
+}
+
+.service-label {
+  margin: 20px;
+  font-family: "GB", serif;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+
+.block3-content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  text-align: center;
+  z-index: 5;
+  width: 100%;
+}
+
+.block3-header {
+  font-family: Aboreto;
+  font-size: 32px;
+  margin-bottom: 320px;
+}
+
+.block4-container {
+  position: relative;
+  display: block;
+  overflow: visible;
+
+}
+
+.block4-img {
+  width: 100%;
+  display: block;
+  height: auto;
+  position: relative;
   z-index: 2;
+  height: 50%;
+}
+
+.block4-text-container{
+  font-family: "Aboreto";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  line-height: .9;
+  font-size: 32px;
+  width: 400px;
+}
+
+.line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: black;
+  opacity: 0.6;
+  margin: 40px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
