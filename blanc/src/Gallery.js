@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 
-function Services() {
+function Gallery() {
   return (
-    <div className="services-page">
-      <h1>Our Services</h1>
+    <div className="Gallery-page">
+      <h1>Gallery</h1>
       <p>Here’s where we’ll list manicure, pedicure, massage, and waxing services.</p>
     </div>
   );
 }
 
-export default Services;
+export default Gallery;
