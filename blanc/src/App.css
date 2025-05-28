@@ -19,6 +19,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Carrois";
+  src: url("./assets/fonts/CarroisGothic-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 img {
   display: block;
   margin: 0;
@@ -28,8 +35,8 @@ img {
 
 .top-menu {
   position: absolute;
-  top: 20px;
-  right: 30px;
+  top: 40px;
+  right: 40px;
   z-index: 10;
 }
 
@@ -53,7 +60,7 @@ img {
 
 .top-menu ul li a:hover {
   background-color: rgba(255, 255, 255, 0.6);
-  color: black; /* subtle pink highlight */
+  color: black; 
   cursor: pointer;
 }
 
@@ -63,32 +70,49 @@ img {
   display: block;
 }
 
-.header-img {
+.block1-img {
   width: 100%; 
-  height: 50%;
+  height: 100%;
 }
 
 .text-container {
   position: absolute;
-  top: 47%;
-  left: 16%;
+  top: 40%;
+  left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-  line-height: .9;
+  line-height: 1.0;
 }
 
 .blanc-text {
   font-family: "Nautigal", cursive;
   font-size: 210px;
+  color: #BF9845;
   margin: 0;
 }
 
 .nailLounge-text {
-  font-family: "Nautigal", cursive;
-  font-size: 48px;
+  font-family: "Aboreto";
+  font-size: 32px;
   margin: 0;
+}
+
+.menuButton{
+  font-family: "Carrois";
+  margin-top: 50px;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #BF9845;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.menuButton:hover {
+  background-color: gray;
 }
 
 .block2-container {

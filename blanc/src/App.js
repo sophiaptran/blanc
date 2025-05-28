@@ -1,19 +1,19 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import './App.css';
 import Services from './Services';
+import './App.css';
 
 function App() {
   return (
 
     <div>
       <div className="block1-container">
-        <img src="/header.png" alt="Header" className="header-img" />
+        <img src="/block1.png" alt="Block 1" className="block1-img" />
 
         {/* Menu added here */}
         <nav className="top-menu">
           <ul>
-            <li><a href="#services">Home</a></li>
+            <li><a href="Services.js">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Services</a></li>
             <li><a href="#contact">Gallery</a></li>
@@ -24,6 +24,7 @@ function App() {
         <div className="text-container">
           <div className="blanc-text">Blanc</div>
           <div className="nailLounge-text">Nail Lounge</div>
+          <a href="Services.js" class="menuButton">view menu</a>
         </div>
       </div>
 
