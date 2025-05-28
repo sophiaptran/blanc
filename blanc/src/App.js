@@ -1,17 +1,32 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
+import Services from './Services';
 
 function App() {
   return (
-    //block 1
+
     <div>
       <div className="block1-container">
         <img src="/header.png" alt="Header" className="header-img" />
+
+        {/* Menu added here */}
+        <nav className="top-menu">
+          <ul>
+            <li><a href="#services">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Services</a></li>
+            <li><a href="#contact">Gallery</a></li>
+          </ul>
+        </nav>
+
+
         <div className="text-container">
           <div className="blanc-text">Blanc</div>
           <div className="nailLounge-text">Nail Lounge</div>
         </div>
       </div>
+
       <div className="block2-container">
         <img src="/marble.png" alt="Marble" className="marble-img" />
         <img src="/nails.png" alt="Nails" className="nails-img" />
@@ -23,6 +38,7 @@ function App() {
             finish that leaves you feeling relaxed, rejuvenated, and beautifully polished.</div>
         </div>
       </div>
+
       <div className="block3-container">
         <img src="/gradient.png" alt="Gradient" className="gradient-img" />
         <div className="block3-content">
@@ -47,6 +63,7 @@ function App() {
           </div>
         </div>
       </div>
+
       <div className="block4-container">
         <img src="/block4.png" alt="Block4" className="block4-img" />
         <div className="block4-text-container">
