@@ -60,7 +60,7 @@ img {
 
 .top-menu ul li a:hover {
   background-color: rgba(255, 255, 255, 0.6);
-  color: black; 
+  color: black;
   cursor: pointer;
 }
 
@@ -71,8 +71,8 @@ img {
 }
 
 .block1-img {
-  width: 100%; 
-  height: 100%;
+  width: 100%;
+  height: 95vh;
 }
 
 .text-container {
@@ -86,7 +86,7 @@ img {
 
 .blanc-text {
   font-family: "Nautigal", cursive;
-  font-size: 210px;
+  font-size: 230px;
   color: #BF9845;
   margin: 0;
 }
@@ -97,7 +97,7 @@ img {
   margin: 0;
 }
 
-.menuButton{
+.menuButton {
   font-family: "Carrois";
   margin-top: 50px;
   display: inline-block;
@@ -115,158 +115,172 @@ img {
   background-color: gray;
 }
 
+
 .block2-container {
- position: relative;
-  width: 100%;
-}
-
-.marble-img {
-   width: 100%;
-   display: block;
-}
-
-.nails-img {
-  position: absolute;
-  top: 50%;
-  left: 16%;
-  transform: translate(-50%, -50%);
-  width: 350px;
-  z-index: 2;
-}
-
-.description-text {
-  position: absolute;
-  top: 50%;
-  left: 45%;
-  transform: translateY(-50%);
-  width: 40%;
+  background-color: #F3F0EE;
+  padding: 100px 20px;
+  padding-bottom: 140px;
   text-align: center;
+}
+
+.block2-content {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: "Aboreto", cursive;
+  font-size: 40px;
+  color: #BF9845;
+  margin-bottom: 20px;
+}
+
+.section-title-black {
+  font-family: "Aboreto", cursive;
+  font-size: 40px;
   color: #333;
-  z-index: 2;
+  margin-bottom: 20px;
 }
 
-.text-header {
-  font-family: "Aboreto";
-  font-size: 24px;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-}
-
-.text-body {
-  font-family: "GT"; 
-  font-size: 18px;
+.section-description {
+  font-family: "GT";
+  font-size: 20px;
+  color: #333;
   line-height: 1.6;
-  padding: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
+
 
 .block3-container {
- position: relative;
- width: 100%;
- z-index: 4;
+  background-color: #FDFBFA;
+  padding: 100px 20px;
+  padding-bottom: 140px;
+  text-align: center;
 }
 
-.gradient-img {
-   width: 100%;
-   display: block;
+.services-content {
+  margin: 0 auto;
 }
 
-.services-container {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 5;
-  display: flex;             
-  justify-content: center;   
-  gap: 80px; 
-}
-
-.service-item {
+.services-grid {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.3s ease;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
 }
 
-.service-item:hover .services-img {
-  transform: scale(1.1);
-  z-index: 3;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+.service-card {
+  border: 1px solid #BF9845;
+  padding: 30px 20px;
+  width: 250px;
+  font-family: "GT";
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.service-item:hover .service-label {
-  font-size: 24px;
-  transform: scale(1.1);
-  transition: transform 0.3s ease, font-size 0.3s ease;
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
-.services-img{
-  width: 200px;
-  border-radius: 12px;
-  height: 200px;
-  transition: transform 0.3s ease;
-}
-
-.service-label {
-  margin: 20px;
-  font-family: "GB", serif;
+.service-card h3 {
+  font-family: "Carrois";
   font-size: 20px;
-  color: #fff;
-  text-align: center;
-  transition: transform 0.3s ease;
+  color: black;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+.service-card p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.price {
+  font-family: "Aboreto";
+  font-size: 24px;
+  color: #BF9845;
+  font-weight: bold;
+}
+
+.service-icon {
+  width: 20%;
+  display: block;
+  margin: 0 auto;
 }
 
 
-.block3-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: 5;
-  width: 100%;
-}
-
-.block3-header {
-  font-family: Aboreto;
-  font-size: 32px;
-  margin-bottom: 320px;
-}
 
 .block4-container {
-  position: relative;
-  display: block;
-  overflow: visible;
-
-}
-
-.block4-img {
-  width: 100%;
-  display: block;
-  height: auto;
-  position: relative;
-  z-index: 2;
-  height: 50%;
-}
-
-.block4-text-container{
-  font-family: "Aboreto";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-color: #F3F0EE;
+  padding: 100px 20px;
+  padding-bottom: 140px;
   text-align: center;
-  color: black;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-  line-height: .9;
-  font-size: 32px;
-  width: 400px;
 }
 
-.line {
-  flex-grow: 1;
-  height: 1px;
-  background-color: black;
-  opacity: 0.6;
-  margin: 40px;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+.block4-content {
+  max-width: 100%;
+  margin: 0 auto;
 }
+
+.stars {
+  color: #BF9845;
+  font-size: 1.5rem;
+  margin: 30px;
+}
+
+.section-name {
+  font-family: "GT";
+  font-size: 18px;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.block5-container {
+  background-color: #BF9845;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.rights p {
+  font-family: "Carrois";
+  font-size: 14px;
+  color: #F3F0EE;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+.services-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+

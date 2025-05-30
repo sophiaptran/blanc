@@ -11,10 +11,10 @@ function Home() {
         {/* Menu */}
         <nav className="top-menu">
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><a href="/about">About</a></li>
+            <li><Link to="/home">Home</Link></li>
+            <li><a href="#about">About</a></li>
             <li><Link to="/services">Services</Link></li>
-            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="#gallery">Gallery</a></li>
           </ul>
         </nav>
 
@@ -26,51 +26,59 @@ function Home() {
       </div>
 
       <div className="block2-container">
-        <img src="/marble.png" alt="Marble" className="marble-img" />
-        <img src="/nails.png" alt="Nails" className="nails-img" />
-        <div className="description-text">
-          <div className="text-header">set the tone for a luxurious escape</div>
-          <div className="text-body">
-            Step into a world of elegance and tranquility at our nail salon,
-            where every detail is designed to pamper you. Whether you're here
-            for a quick refresh or a full spa indulgence, our expert technicians
-            ensure personalized care, top-quality products, and a flawless
-            finish that leaves you feeling relaxed, rejuvenated, and beautifully polished.
-          </div>
+        <div className="block2-content">
+          <h2 className="section-title">Set the Tone for a Luxurious Escape</h2>
+          <p className="section-description">
+            Step into a world of elegance and tranquility at our nail lounge, where every detail is designed to pamper you. Whether you're here for a quick refresh or a full spa indulgence, our expert technicians ensure personalized care that leaves you feeling relaxed, rejuvenated, and beautifully polished.
+          </p>
         </div>
       </div>
 
       <div className="block3-container">
-        <img src="/gradient.png" alt="Gradient" className="gradient-img" />
-        <div className="block3-content">
-          <div className="block3-header">What We Do</div>
-          <div className="services-container">
-            <div className="service-item">
-              <img src="/manicure.png" alt="Manicure" className="services-img" />
-              <div className="service-label">manicure</div>
+        <div className="services-content">
+          <h2 className="section-title">SERVICES</h2>
+          <div className="services-grid">
+            <div className="service-card">
+              <h3>MANICURE</h3>
+              <p>Essential nail care and polish for beautiful, refined hands</p>
+              <img src="/nail-polish.png" alt="manicure" className="service-icon" />
             </div>
-            <div className="service-item">
-              <img src="/pedicure.png" alt="Pedicure" className="services-img" />
-              <div className="service-label">pedicure</div>
+            <div className="service-card">
+              <h3>PEDICURE</h3>
+              <p>Relaxing foot treatment with buffing and polish perfection</p>
+              <img src="/pedicure.png" alt="pedicure" className="service-icon" />
             </div>
-            <div className="service-item">
-              <img src="/massage.png" alt="Massage" className="services-img" />
-              <div className="service-label">massage</div>
+            <div className="service-card">
+              <h3>MASSAGE</h3>
+              <p>Soothing full-body massage to release tension and restore balance</p>
+              <img src="/facial-massage.png" alt="massage" className="service-icon" />
             </div>
-            <div className="service-item">
-              <img src="/wax.png" alt="Wax" className="services-img" />
-              <div className="service-label">wax</div>
+            <div className="service-card">
+              <h3>WAX</h3>
+              <p>Gentle and effective hair removal for smooth, radiant skin</p>
+              <img src="/wax.png" alt="wax" className="service-icon" />
             </div>
           </div>
         </div>
       </div>
 
-      <div className="block4-container">
-        <img src="/block4.png" alt="Block4" className="block4-img" />
-        <div className="block4-text-container">
-          <div className="line"></div>
-          <div className="block4-text">Delicately designed for your moments of stillness and care.</div>
-          <div className="line"></div>
+    <div className="block4-container">
+        <div className="block4-content">
+          <h2 className="section-title-black">Testimonials</h2>
+            <p className="stars">★★★★★</p>
+          <p className="section-description">
+            "Very meticulous, professional and friendly! She did a BEAUTIFUL job!" </p>
+           <p className="section-name">- Elle L.</p>
+        </div>
+      </div>
+
+      <div className="block5-container">
+        <div className="rights">
+          <p> © 2025 Blanc Nail Lounge. All rights reserved. </p>
+          <p><a href="https://www.flaticon.com/free-icons/nails" title="nails icons">Nails icons created by Freepik - Flaticon</a></p>
+          <p><a href="https://www.flaticon.com/free-icons/pedicure" title="pedicure icons">Pedicure icons created by Freepik - Flaticon</a></p>
+          <p><a href="https://www.flaticon.com/free-icons/spa-and-relax" title="spa and relax icons">Spa and relax icons created by Freepik - Flaticon</a></p>
+          <p><a href="https://www.flaticon.com/free-icons/hair" title="hair icons">Hair icons created by Mayor Icons - Flaticon</a></p>
         </div>
       </div>
     </div>
