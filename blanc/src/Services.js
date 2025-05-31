@@ -5,6 +5,8 @@ import './App.css';
 function Services() {
   return (
     <div className="services-page">
+       <img src="/background.png" alt="Background" className="background-img" />
+
 
 
       {/* Menu */}
