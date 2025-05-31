@@ -14,7 +14,7 @@ function Home() {
             <li><Link to="/home">Home</Link></li>
             <li><a href="/about">About</a></li>
             <li><Link to="/services">Services</Link></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="/gallery">Gallery</a></li>
           </ul>
         </nav>
 
