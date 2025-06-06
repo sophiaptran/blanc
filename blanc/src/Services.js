@@ -56,6 +56,11 @@ function Services() {
           <span className="service-price">$60</span>
         </div>
       </div>
+ <div className="services-block5-container">
+        <div className="rights">
+          <p> © 2025 Blanc Nail Lounge. All rights reserved. </p>
+        </div>
+      </div>
 
     </div>
   );

@@ -61,6 +61,11 @@ function About() {
           </div>
         </div>
       </div>
+      <div className="block5-container">
+        <div className="rights">
+          <p> © 2025 Blanc Nail Lounge. All rights reserved. </p>
+        </div>
+      </div>
 
     </div>
 
