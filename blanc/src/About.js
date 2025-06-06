@@ -36,19 +36,29 @@ function About() {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
           <div className="right-description-columns">
-    <div className="store-hours">
-      <h3>STORE HOURS</h3>
-      <p>Mon-Fri: 9am - 7pm</p>
-      <p>Sat: 10am - 6pm</p>
-      <p>Sun: Closed</p>
-    </div>
-    <div className="contact-info">
-      <h3>CONTACT INFO</h3>
-      <p>Phone: (123) 456-7890</p>
-      <p>Email: contact@blanc.com</p>
-      <p>Address: 123 Elegance St, Suite 100</p>
-    </div>
-  </div>
+            <div className="store-hours">
+              <h3>STORE HOURS</h3>
+              <p>Mon-Fri: 9am - 7pm</p>
+              <p>Sat: 10am - 6pm</p>
+              <p>Sun: Closed</p>
+            </div>
+            <div className="contact-info">
+              <h3>CONTACT INFO</h3>
+
+              <p className="info-line">
+                <img src="/phone.png" alt="phone" className="about-icon" />
+                <span>(123) 456-7890</span>
+              </p>
+              <p className="info-line">
+                <img src="/email.png" alt="email" className="about-icon" />
+                <span>contact@blanc.com</span>
+              </p>
+              <p className="info-line">
+                <img src="/pin.png" alt="pin" className="about-icon" />
+                <span>123 Elegance St, Suite 100</span>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 

@@ -486,3 +486,14 @@ body, html {
   padding: -10px;
   height: 100%;
 }
+
+.info-line {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+
+.about-icon {
+  width: 20px;
+  height: auto;
+}
