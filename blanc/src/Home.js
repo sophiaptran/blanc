@@ -75,10 +75,6 @@ function Home() {
       <div className="block5-container">
         <div className="rights">
           <p> © 2025 Blanc Nail Lounge. All rights reserved. </p>
-          <p><a href="https://www.flaticon.com/free-icons/nails" title="nails icons">Nails icons created by Freepik - Flaticon</a></p>
-          <p><a href="https://www.flaticon.com/free-icons/pedicure" title="pedicure icons">Pedicure icons created by Freepik - Flaticon</a></p>
-          <p><a href="https://www.flaticon.com/free-icons/spa-and-relax" title="spa and relax icons">Spa and relax icons created by Freepik - Flaticon</a></p>
-          <p><a href="https://www.flaticon.com/free-icons/hair" title="hair icons">Hair icons created by Mayor Icons - Flaticon</a></p>
         </div>
       </div>
     </div>
