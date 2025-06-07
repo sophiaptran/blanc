@@ -22,7 +22,7 @@ function Services() {
       <div className="titleContainer">
         <p className="logo">Blanc</p>
         <p className="subLogo">Nail Lounge</p>
-        <h2 className="pageTitle">Price Menu</h2>
+        <h2 className="pageTitle">Service Menu</h2>
       </div>
 
       <div className="rectangle-container">
