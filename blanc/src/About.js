@@ -38,8 +38,9 @@ function About() {
           <div className="right-description-columns">
             <div className="store-hours">
               <h3>STORE HOURS</h3>
-              <p>Mon - Sat: 9:30am - 7pm</p>
-              <p>Sun: 11:30am - 5:30pm</p>
+              <p>Mon - Fri: 10:00am - 7:30pm</p>
+              <p>Sat: 9:30am - 7:00pm</p>
+              <p>Sun: 11:00am - 5:00pm</p>
             </div>
             <div className="contact-info">
               <h3>CONTACT INFO</h3>

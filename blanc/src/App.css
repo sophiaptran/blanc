@@ -306,8 +306,7 @@ img {
   background-color: #F3F0EE;
   border: 1px solid #BF9845;
   padding: 30px 40px;
-  margin: 20px auto;
-  width: fit-content;
+  margin: 60px 120px;
   max-width: 90%;
   text-align: left;
   z-index: 2;
@@ -331,6 +330,7 @@ img {
 }
 
 .service-name {
+  font-family: "Carrois";
   text-align: left;
   font-weight: bold;
 }
@@ -347,14 +347,23 @@ img {
   margin-top: -10px;
   margin-bottom: 20px;
   line-height: 1.4;
-  max-width: 500px; /* optional for readability */
+ 
   margin-left: 15px;
+}
+
+.price-columns {
+  columns: 2;         
+  column-gap: 5rem;   
+}
+.price-item {
+  break-inside: avoid; 
+  margin-bottom: 0.75rem;
 }
 
 .rectangle-title {
   font-family: "Carrois";
-  font-size: 28px;
-  color: #333;
+  font-size: 32px;
+  color: #BF9845;
   margin: 0;
   line-height: 1.5;
   text-align: left;
