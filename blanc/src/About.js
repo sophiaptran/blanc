@@ -30,7 +30,7 @@ function About() {
           <iframe
             title="Blanc Location"
             className="map-iframe"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53477.31002175786!2d-96.75355155136718!3d33.1003578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c17d00e902ae7%3A0xe17120905bf12cee!2sNAIL%20BOX%20SALON%20(%20BOOKING%20ONLINE%20AVAILABLE%20)!5e0!3m2!1sen!2sus!4v1748718708747!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3337.8119466435564!2d-96.90690092426918!3d33.219025973482175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c383eace16c91%3A0x18ae8f03b3dcbbac!2s27052%20E%20University%20Dr%20%23115%2C%20Little%20Elm%2C%20TX%2075068!5e0!3m2!1sen!2sus!4v1752780179634!5m2!1sen!2sus" 
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
@@ -38,9 +38,8 @@ function About() {
           <div className="right-description-columns">
             <div className="store-hours">
               <h3>STORE HOURS</h3>
-              <p>Mon-Fri: 9am - 7pm</p>
-              <p>Sat: 10am - 6pm</p>
-              <p>Sun: Closed</p>
+              <p>Mon - Sat: 9:30am - 7pm</p>
+              <p>Sun: 11:30am - 5:30pm</p>
             </div>
             <div className="contact-info">
               <h3>CONTACT INFO</h3>
@@ -51,11 +50,12 @@ function About() {
               </p>
               <p className="info-line">
                 <img src="/email.png" alt="email" className="about-icon" />
-                <span>contact@blanc.com</span>
+                <span>blanccndllc@gmail</span>
               </p>
               <p className="info-line">
                 <img src="/pin.png" alt="pin" className="about-icon" />
-                <span>123 Elegance St, Suite 100</span>
+                <span>27052 E UNIVERSITY DR STE 115
+LITTLE ELM, TX 75068</span>
               </p>
             </div>
           </div>

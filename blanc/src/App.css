@@ -332,12 +332,25 @@ img {
 
 .service-name {
   text-align: left;
+  font-weight: bold;
 }
 
 .service-price {
   text-align: right;
   font-weight: bold;
 }
+
+.service-description {
+  font-family: "GT";
+  font-size: 16px;
+  color: #333;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  max-width: 500px; /* optional for readability */
+  margin-left: 15px;
+}
+
 .rectangle-title {
   font-family: "Carrois";
   font-size: 28px;
@@ -345,6 +358,7 @@ img {
   margin: 0;
   line-height: 1.5;
   text-align: left;
+  padding-bottom: 15px;
 }
 
 .rectangle-text {
@@ -511,4 +525,5 @@ body, html {
 .about-icon {
   width: 20px;
   height: auto;
+  align-self: flex-start;
 }
