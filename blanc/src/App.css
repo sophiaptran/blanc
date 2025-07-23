@@ -356,7 +356,6 @@ img {
 }
 
 
-
 .pageTitle {
   font-family: "Aboreto", cursive;
   font-size: 48px;
@@ -414,11 +413,14 @@ img {
 }
 
 .price-columns {
-  columns: 2;         
-  column-gap: 5rem;   
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 5rem;
+  row-gap: 0; 
 }
 .price-item {
-  break-inside: avoid; 
+  flex: 1 1 45%; /* two columns */
+  break-inside: avoid; /* optional */
   margin-bottom: 0.75rem;
 }
 
@@ -438,6 +440,32 @@ img {
   color: #333;
   margin: 0;
   line-height: 1.5;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .service-description {
+    font-size: 14px; /* slightly smaller font */
+  }
+   .price-columns {
+    flex-direction: column;
+  }
+  .price-item {
+    flex: 1 1 100%; /* full width */
+    gap: 80px;
+  }
+
+  .service-name, .service-price {
+    max-width: 100%; /* full width on mobile */
+    margin-bottom: 4px;
+  }
+
+  .rectangle-container {
+    max-width: 100%;
+    padding: 10px 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }
 
 .About-page {
@@ -559,7 +587,6 @@ img {
     width: 100%;
   }
 }
-
 
 .map-iframe {
   border: 0;
