@@ -388,6 +388,7 @@ img {
   color: #333;
   margin-bottom: 10px;
   min-width: 300px;
+
 }
 
 .service-name {
@@ -452,12 +453,19 @@ img {
   }
   .price-item {
     flex: 1 1 100%; /* full width */
-    gap: 80px;
+    gap: 4px;
   }
 
-  .service-name, .service-price {
+  .service-name {
     max-width: 100%; /* full width on mobile */
     margin-bottom: 4px;
+
+  } 
+
+  .service-price {
+    padding-right: 10px;
+    margin-bottom: 4px;
+    text-align: left;
   }
 
   .rectangle-container {
