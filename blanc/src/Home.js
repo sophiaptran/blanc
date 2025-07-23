@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
 
 function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div>
       <div className="block1-container">
@@ -10,7 +12,16 @@ function Home() {
 
         {/* Menu */}
         <nav className="top-menu">
-          <ul>
+          <button
+            className="hamburger"
+            onClick={() => {
+              setMenuOpen(!menuOpen);
+              console.log("Menu is now:", !menuOpen);
+            }}
+          >
+            ☰
+          </button>
+          <ul className={menuOpen ? "menu-open" : "menu-closed"}>
             <li><Link to="/home">Home</Link></li>
             <li><a href="/about">About</a></li>
             <li><Link to="/services">Services</Link></li>
@@ -62,13 +73,13 @@ function Home() {
         </div>
       </div>
 
-    <div className="block4-container">
+      <div className="block4-container">
         <div className="block4-content">
           <h2 className="section-title-black">Testimonials</h2>
-            <p className="stars">★★★★★</p>
+          <p className="stars">★★★★★</p>
           <p className="section-description">
             "Very meticulous, professional and friendly! She did a BEAUTIFUL job!" </p>
-           <p className="section-name">- Elle L.</p>
+          <p className="section-name">- Elle L.</p>
         </div>
       </div>
 

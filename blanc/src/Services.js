@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
 
 function Services() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="services-page">
       <img src="/background.png" alt="Background" className="background-img" />
@@ -11,7 +13,16 @@ function Services() {
 
       {/* Menu */}
       <nav className="top-menu">
-        <ul>
+        <button
+          className="hamburger"
+          onClick={() => {
+            setMenuOpen(!menuOpen);
+            console.log("Menu is now:", !menuOpen);
+          }}
+        >
+          ☰
+        </button>
+        <ul className={menuOpen ? "menu-open" : "menu-closed"}>
           <li><Link to="/home">Home</Link></li>
           <li><a href="/about">About</a></li>
           <li><Link to="/services">Services</Link></li>

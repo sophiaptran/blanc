@@ -1,22 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { Link } from 'react-router-dom';
 
 
 function About() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="About-page">
       <img src="/aboutBackground.png" alt="Background" className="background-img" />
 
       {/* Menu */}
       <nav className="top-menu">
-        <ul>
+        <button
+          className="hamburger"
+          onClick={() => {
+            setMenuOpen(!menuOpen);
+            console.log("Menu is now:", !menuOpen);
+          }}
+        >
+          ☰
+        </button>
+        <ul className={menuOpen ? "menu-open" : "menu-closed"}>
           <li><Link to="/home">Home</Link></li>
           <li><a href="/about">About</a></li>
           <li><Link to="/services">Services</Link></li>
           <li><a href="/gallery">Gallery</a></li>
         </ul>
       </nav>
+
       <div className="about-main-section">
         <div className="about-left">
           <div className="aboutTitleContainer">
@@ -30,7 +42,7 @@ function About() {
           <iframe
             title="Blanc Location"
             className="map-iframe"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3337.8119466435564!2d-96.90690092426918!3d33.219025973482175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c383eace16c91%3A0x18ae8f03b3dcbbac!2s27052%20E%20University%20Dr%20%23115%2C%20Little%20Elm%2C%20TX%2075068!5e0!3m2!1sen!2sus!4v1752780179634!5m2!1sen!2sus" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3337.8119466435564!2d-96.90690092426918!3d33.219025973482175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c383eace16c91%3A0x18ae8f03b3dcbbac!2s27052%20E%20University%20Dr%20%23115%2C%20Little%20Elm%2C%20TX%2075068!5e0!3m2!1sen!2sus!4v1752780179634!5m2!1sen!2sus"
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
@@ -56,7 +68,7 @@ function About() {
               <p className="info-line">
                 <img src="/pin.png" alt="pin" className="about-icon" />
                 <span>27052 E UNIVERSITY DR STE 115
-LITTLE ELM, TX 75068</span>
+                  LITTLE ELM, TX 75068</span>
               </p>
             </div>
           </div>
