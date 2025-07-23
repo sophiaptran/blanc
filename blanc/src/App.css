@@ -140,14 +140,14 @@ img {
 
 .blanc-text {
   font-family: "Nautigal", cursive;
-  font-size: clamp(148px, 16vw, 280px);
+  font-size: clamp(200px, 16vw, 280px);
   color: #BF9845;
   margin: 0;
 }
 
 .nailLounge-text {
   font-family: "Aboreto";
-  font-size: clamp(20px, 4vw, 36px);
+  font-size: clamp(30px, 16vw, 36px);
   margin: 0;
 }
 
