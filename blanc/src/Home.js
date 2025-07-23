@@ -35,13 +35,15 @@ function Home() {
           <Link to="/services" className="menuButton">view menu</Link>
         </div>
       </div>
-
       <div className="block2-container">
         <div className="block2-content">
-          <h2 className="section-title">Set the Tone for a Luxurious Escape</h2>
-          <p className="section-description">
-            Step into a world of elegance and tranquility at our nail lounge, where every detail is designed to pamper you. Whether you're here for a quick refresh or a full spa indulgence, our expert technicians ensure personalized care that leaves you feeling relaxed, rejuvenated, and beautifully polished.
-          </p>
+          <img src="/blancLogo.png" alt="logo" />
+          <div className="text-content">
+            <h2 className="section-title">Set the Tone for a Luxurious Escape</h2>
+            <p className="section-description">
+              Step into a world of elegance and tranquility at our nail lounge, where every detail is designed to pamper you. Whether you're here for a quick refresh or a full spa indulgence, our expert technicians ensure personalized care that leaves you feeling relaxed, rejuvenated, and beautifully polished.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -77,7 +79,7 @@ function Home() {
         <div className="block4-content">
           <h2 className="section-title-black">Testimonials</h2>
           <p className="stars">★★★★★</p>
-          <p className="section-description">
+          <p className="section-name">
             "Very meticulous, professional and friendly! She did a BEAUTIFUL job!" </p>
           <p className="section-name">- Elle L.</p>
         </div>

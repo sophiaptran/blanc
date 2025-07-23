@@ -180,28 +180,44 @@ img {
 
 .block2-container {
   background-color: #F3F0EE;
-  padding: 100px 20px;
-  padding-bottom: 140px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 100px; 
 }
 
 .block2-content {
-  max-width: 100%;
-  margin: 0 auto;
+  display: flex;
+  gap: 100px;
+  max-width: 1200px;
+  align-items: center;
+}
+
+
+.block2-content img {
+  width: 280px; /* adjust size as needed */
+  height: auto;
+  object-fit: contain;
+  padding: 40px;
+  transition: transform 0.3s ease;
+}
+
+.block2-content img:hover {
+  transform: scale(1.1); 
 }
 
 .section-title {
   font-family: "Aboreto", cursive;
   font-size: 40px;
   color: #BF9845;
-  margin-bottom: 20px;
+  margin: 0 ;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 .section-title-black {
   font-family: "Aboreto", cursive;
   font-size: 40px;
   color: #333;
-  margin-bottom: 20px;
 }
 
 .section-description {
@@ -210,10 +226,25 @@ img {
   color: #333;
   line-height: 1.6;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0;
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .block2-content {
+    flex-direction: column;
+    text-align: center; /* Optional: center text on mobile */
+    gap: 40px; /* reduce the space between items for mobile */
+  }
+
+  .section-description {
+    text-align: center;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+}
 
 .block3-container {
   background-color: #FDFBFA;
