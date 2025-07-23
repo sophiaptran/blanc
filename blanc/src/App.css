@@ -514,6 +514,53 @@ img {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .about-main-section {
+    flex-direction: column;
+    padding: 20px 20px;
+  }
+
+  .about-left,
+  .about-map-section {
+    width: 100%;
+  }
+
+  .aboutTitleContainer {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 148px;
+    text-align: center;
+  }
+
+  .aboutSubLogo {
+    font-size: 24px; 
+    text-align: center;
+    padding-left: 0px;
+  }
+
+  .about-description {
+    font-size: 16px;
+  }
+
+  .map-iframe {
+    height: 250px;
+  }
+
+  .right-description-columns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .store-hours,
+  .contact-info {
+    width: 100%;
+  }
+}
+
+
 .map-iframe {
   border: 0;
   width: 100%;
@@ -563,6 +610,8 @@ img {
   max-width: 1000px;
   margin: 0 auto;
   padding-bottom: 70px;
+  padding-left: 16px;
+  padding-right: 16px;
   z-index: 2;
 }
 
