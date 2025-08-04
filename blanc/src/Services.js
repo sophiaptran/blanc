@@ -55,7 +55,7 @@ function Services() {
           <span className="service-price">$40</span>
         </div>
         <p className="service-description">
-          Premium Individual Packets, fingers soak, cuticle care, moisture mask with hot towel, hydrated paraffin, 8 mins hands massage, free regular polish of your choice
+          Premium individual packets, fingers soak, cuticle care, moisture mask with hot towel, hydrated paraffin, 8 mins hands massage, free regular polish of your choice
         </p>
 
         <div className="price-item">
@@ -91,7 +91,7 @@ function Services() {
           <span className="service-price">$65</span>
         </div>
         <p className="service-description">
-          Luxury individual packets, feet soak in infused season scent, bath bomb, cuticle care, callus treatment, sugar scrub exfoliation with fresh orange, moisture mask with hot towel, hydrated paraffin, hot stone, collagen sock, 15 mins legs & feet massage, free regular polish of your choice
+          Luxury individual packets, feet soak in infused season scent, bath bomb, cuticle care, callus treatment, sugar scrub exfoliation with fresh orange, moisture mask with hot towel, hydrated paraffin, hot stone, 15 mins legs & feet massage, free regular polish of your choice
         </p>
         <div className="price-item">
           <span className="service-name">Deluxe Pedicure</span>
@@ -100,7 +100,7 @@ function Services() {
         <p className="service-description">
           Green Tea&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coffee
         </p>        <p className="service-description">
-          Individual packets, feet soak with match / coffee, bath bomb, cuticle care, callus treatment, sugar scrub exfoliation, mud mask with hot towel, hydrated paraffin, hot stone, collagen sock, 10 mins legs & feet massage, free regular polish of your choice
+          Individual packets, feet soak with match / coffee, bath bomb, cuticle care, callus treatment, sugar scrub exfoliation, mud mask with hot towel, hydrated paraffin, 10 mins legs & feet massage, free regular polish of your choice
         </p> <div className="price-item">
           <span className="service-name">Express Pedicure</span>
           <span className="service-price">$35</span>
@@ -221,12 +221,8 @@ function Services() {
         <p className="rectangle-title">GEL X (PRESS-ON)</p>
         <div className="price-columns">
           <div className="price-item">
-            <span className="service-name">Gel X with Gel Polish (Any shape)</span>
+            <span className="service-name">Gel X with Gel Polish (any shape)</span>
             <span className="service-price">$70+</span>
-          </div>
-          <div className="price-item">
-            <span className="service-name">Refill</span>
-            <span className="service-price">$60+</span>
           </div>
           <div className="price-item">
             <span className="service-name">Deep Curve French</span>
